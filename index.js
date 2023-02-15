@@ -58,8 +58,7 @@ function ToDay(input){
     let data = splitDate(input);
     let total = data[0] * 1 + data[1] / 24 + data[2] / 1440 + data[3] / 86400;
     return total;
-}
-    
+}  
 
 module.exports = {
     ToSec,

@@ -8,4 +8,4 @@ if your input does not does not look like dhms it is no problem as long as you u
 
 so ToSec('7h5m') retuns 25500
 
-the programm is not case sensitive so 7H5m returns the same as 7h5M or 7h5m
+the programm is not case sensitive so 7H5m or 7h5M will return the same as 7h5m

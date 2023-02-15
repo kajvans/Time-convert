@@ -1,12 +1,12 @@
 {
-  "name": "time-convert",
-  "version": "1.0.0",
-  "description": "",
+  "name": "timestringtonumber",
+  "version": "1.0.2",
+  "description": "generetes a number from a time string",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
-  "author": "",
+  "author": "kaj van schalkwijk",
   "license": "ISC"
 }
