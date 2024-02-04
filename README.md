@@ -1,11 +1,62 @@
-there a four different function all who do nealry the same but return something different.
+# Timestringconverter
 
-there it ToSec, ToMin, ToHour, ToDay
+An easy way to use readable timestrings in your code.
 
-you give it an input like 4d5h7m18s and it calculates it to Seconds, Minutes, Hours or Days
+## Table of Contents
 
-if your input does not does not look like dhms it is no problem as long as you use one of the letters it works
+- [About](#about)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-so ToSec('7h5m') retuns 25500
+## About
 
-the programm is not case sensitive so 7H5m or 7h5M will return the same as 7h5m
+This library is written because of the problem with jsonwebtokens and cookies. I find it a lot easier to say 5d instead of calculating the amount of ms in 5 days. This library is also very useful for other things like timeouts and intervals.
+
+## Features
+
+- Convert timestrings to milliseconds
+- Convert timestrings to seconds
+- Convert timestrings to minutes
+- Convert timestrings to hours
+- Convert timestrings to days
+
+## Installation
+
+To install this library, you can use npm or yarn.
+
+```bash
+npm install timestringconverter
+```
+
+```bash
+yarn add timestringconverter
+```
+
+## Usage
+
+```javascript
+const timestringconverter = require('timestringconverter');
+
+console.log(timestringconverter.toMilliseconds('5d')); // 432000000
+console.log(timestringconverter.toSeconds('5d2h4m')); // 432144
+console.log(timestringconverter.toMinutes('5d9h')); // 7209
+console.log(timestringconverter.toHours('5d2H')); // 122
+console.log(timestringconverter.toDays('2h500m10000ms')); // 4.57
+```
+
+## Contributing
+
+Guidelines for contributing to the project. Include information on how to report issues, suggest improvements, or submit pull requests.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+- GitHub: [Kajvan](https://github.com/kajvan) (for GitHub)
+- Gitea: [Kajvans](https://gitea.quiztimes.nl/kajvans) (for Gitea)
