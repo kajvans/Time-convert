@@ -28,16 +28,22 @@ function parseVal(input) {
         data = input.split("s");
         input = data[0] + "s0ms" + data[1];
     }
-    return input;
+    let returnthis = input;
+    return returnthis;
 }
 function splitDate(input) {
     input = parseVal(input);
-    let days = parseInt(input.split("d")[0]);
-    let hours = parseInt(input.split("d")[1].split("h")[0]);
-    let minutes = parseInt(input.split("d")[1].split("h")[1].split("m")[0]);
-    let seconds = parseInt(input.split("d")[1].split("h")[1].split("m")[1].split("s")[0]);
-    let miliseconds = parseInt(input.split("d")[1].split("h")[1].split("m")[1].split("s")[1].split("ms")[0]);
-    return [days, hours, minutes, seconds, miliseconds];
+    let parts = input.split("d");
+    let days = parseInt(parts[0]);
+    parts = parts[1].split("h");
+    let hours = parseInt(parts[0]);
+    parts = parts[1].split("m");
+    let minutes = parseInt(parts[0]);
+    parts = parts[1].split("s");
+    let seconds = parseInt(parts[0]);
+    parts = parts[1].split("ms");
+    let milliseconds = parseInt(parts[0]);
+    return [days, hours, minutes, seconds, milliseconds];
 }
 function ToSec(input) {
     let data = splitDate(input);

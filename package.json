@@ -1,6 +1,6 @@
 {
   "name": "timestringconverter",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "generetes a number from a time string",
   "main": "src/index.ts",
   "scripts": {
