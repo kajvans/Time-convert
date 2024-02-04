@@ -38,6 +38,8 @@ yarn add timestringconverter
 
 ## Usage
 
+important: you need to use d, h, m, s and ms to define the time. You can also use uppercase letters.
+
 ```javascript
 const timestringconverter = require('timestringconverter');
 
