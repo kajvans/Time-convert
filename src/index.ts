@@ -47,40 +47,32 @@ function splitDate(input: string): number[] {
     return [days, hours, minutes, seconds, miliseconds];
 }
 
-function ToSec(input: string){
+export function ToSec(input: string){
     let data = splitDate(input);
     let total = data[0] * 86400 + data[1] * 3600 + data[2] * 60 + data[3] + data[4] / 1000;
     return total;
 }
 
-function ToMin(input: string){
+export function ToMin(input: string){
     let data = splitDate(input);
     let total = data[0] * 1440 + data[1] * 60 + data[2] + data[3] / 60 + data[4] / 60000;
     return total;
 }
 
-function ToHour(input: string){
+export function ToHour(input: string){
     let data = splitDate(input);
     let total = data[0] * 24 + data[1] + data[2] / 60 + data[3] / 3600 + data[4] / 3600000;
     return total;
 }
 
-function ToDay(input: string){
+export function ToDay(input: string){
     let data = splitDate(input);
     let total = data[0] + data[1] / 24 + data[2] / 1440 + data[3] / 86400 + data[4] / 86400000;
     return total;
 }  
 
-function ToMs(input: string){
+export function ToMs(input: string){
     let data = splitDate(input);
     let total = data[0] * 86400000 + data[1] * 3600000 + data[2] * 60000 + data[3] * 1000 + data[4];
     return total;
-}
-
-export = {
-    ToSec,
-    ToMin,
-    ToHour,
-    ToDay,
-    ToMs
 }
