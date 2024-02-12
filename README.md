@@ -23,6 +23,7 @@ This library is written because of the problem with jsonwebtokens and cookies. I
 - Convert timestrings to minutes
 - Convert timestrings to hours
 - Convert timestrings to days
+- Works in ESM CJS and typescript
 
 ## Installation
 
